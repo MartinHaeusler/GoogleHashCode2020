@@ -1,4 +1,5 @@
 import java.io.File
+import kotlin.math.ceil
 
 typealias BookId = Int
 typealias BookScore = Int
@@ -9,7 +10,14 @@ class Library(
     val signupTime: Int,
     val booksShippedPerDay: Int,
     val books: Set<BookId>
-)
+) {
+
+    val totalScanTime: Int
+    get(){
+        return signupTime + (ceil(numberOfBooks.toDouble() / booksShippedPerDay)).toInt()
+    }
+
+}
 
 class Problem(
     val numberOfBooks: Int,
@@ -17,7 +25,12 @@ class Problem(
     val numberOfDays: Int,
     val bookScores: MutableMap<BookId, BookScore> = mutableMapOf(),
     val libraries: MutableList<Library> = mutableListOf()
-)
+) {
+
+    fun totalScoreOf(library: Library): Int {
+        return library.books.sumBy { this.bookScores[it]!! }
+    }
+}
 
 class Solution(
     val libraryScans: List<LibraryScan>
@@ -108,5 +121,7 @@ fun printToFile(solution: Solution, file: File) {
 }
 
 fun solve(problem: Problem): Solution {
-    TODO()
+    problem.libraries.sortByDescending { problem.totalScoreOf(it) }
+
+
 }
