@@ -2,20 +2,53 @@ import java.io.File
 import java.nio.file.Files
 import kotlin.math.ceil
 
+fun main(args: Array<String>) {
+    if(args.size != 1){
+        throw IllegalArgumentException("Expected 1 argument (the book file)!")
+    }
+    val inputFile = File(args[0])
+    val problem = parseInputFile(inputFile)
+    println("Problem ${inputFile.name} has ${problem.libraries.size} libraries and ${problem.bookScores.size} books. Total time is ${problem.numberOfDays} days.")
+    val solution = solve2(problem)
+    val score = score(problem, solution)
+    val outputDir = File(inputFile.parentFile, inputFile.nameWithoutExtension + "_output")
+    if(!outputDir.exists()){
+        Files.createDirectory(outputDir.toPath())
+    }
+
+    printToFile(solution, File(outputDir, "${score}.solution.txt"))
+}
+
+
 typealias BookId = Int
 typealias BookScore = Int
+
 
 class Library(
     val id: Int,
     val numberOfBooks: Int,
     val signupTime: Int,
     val booksShippedPerDay: Int,
-    val books: Set<BookId>
+    val books: MutableList<BookId>
 ) {
 
     val totalScanTime: Int
     get(){
         return signupTime + (ceil(numberOfBooks.toDouble() / booksShippedPerDay)).toInt()
+    }
+
+    fun score(bookScores: Map<BookId, BookScore>, remainingTime: Int, iteration: Int): Int {
+        if(iteration == 0){
+            return Integer.MAX_VALUE - this.signupTime
+        }
+        val booksToShip = getShipableBooks(bookScores, remainingTime)
+        return booksToShip.sumBy { bookScores[it] ?: 0 }
+    }
+
+    fun getShipableBooks(bookScores: Map<BookId, BookScore>, remainingTime: Int): List<BookId> {
+//        val bestBooks = this.books.sortedByDescending { bookScores[it] ?: 0 }
+        val bestBooks = this.books.filter { (bookScores[it]?: 0) > 0 }
+        return bestBooks.take(Math.min(Integer.MAX_VALUE.toLong(), ((remainingTime - signupTime).toLong() * booksShippedPerDay)).toInt())
     }
 
 }
@@ -31,6 +64,7 @@ class Problem(
     fun totalScoreOf(library: Library): Int {
         return library.books.sumBy { this.bookScores[it]!! }
     }
+
 }
 
 class Solution(
@@ -59,21 +93,6 @@ class LibraryScan(
     val booksToScan: List<BookId>
 )
 
-fun main(args: Array<String>) {
-    if(args.size != 1){
-        throw IllegalArgumentException("Expected 1 argument (the book file)!")
-    }
-    val inputFile = File(args[0])
-    val problem = parseInputFile(inputFile)
-    val solution = solve(problem)
-    val score = score(problem, solution)
-    val outputDir = File(inputFile.parentFile, inputFile.nameWithoutExtension + "_output")
-    if(!outputDir.exists()){
-        Files.createDirectory(outputDir.toPath())
-    }
-
-    printToFile(solution, File(outputDir, "${score}.solution.txt"))
-}
 
 private fun parseInputFile(file: File): Problem {
     if (!file.exists() || !file.isFile) {
@@ -115,7 +134,7 @@ private fun parseInputFile(file: File): Problem {
             numberOfBooks = numberOfBooksInLibray.toInt(),
             signupTime = signupTime.toInt(),
             booksShippedPerDay = booksShippedPerDay.toInt(),
-            books = bookIds
+            books = bookIds.toMutableList()
         )
     }
     return problem
@@ -164,4 +183,39 @@ fun solve(problem: Problem): Solution {
 fun score(problem: Problem, solution: Solution): Int {
     val allScannedBooks = solution.libraryScans.asSequence().flatMap { it.booksToScan.asSequence() }.toSet()
     return allScannedBooks.sumBy { problem.bookScores[it]!! }
+}
+
+
+fun solve2(problem: Problem): Solution {
+    problem.libraries.sortByDescending { problem.totalScoreOf(it) }
+
+    for(library in problem.libraries){
+        library.books.sortByDescending { problem.bookScores[it] ?: 0 }
+    }
+
+    val bookScores = problem.bookScores.toMutableMap()
+    val solution = Solution()
+
+    val remainingLibraries = problem.libraries.toMutableList()
+    var remainingDays = problem.numberOfDays
+
+    var iteration = 0
+    while(remainingLibraries.isNotEmpty() && remainingDays > 0){
+        remainingLibraries.removeIf{ it.signupTime >= remainingDays }
+        if(remainingLibraries.isEmpty()){
+            break
+        }
+        remainingLibraries.sortWith(Comparator.comparing { library: Library -> library.score(bookScores, remainingDays, iteration) }.thenComparing{ library -> Integer.MAX_VALUE - library.signupTime}.reversed())
+        val bestLibrary = remainingLibraries.removeAt(0)
+        val score = bestLibrary.score(bookScores, remainingDays, iteration)
+        val shippedBooks = bestLibrary.getShipableBooks(bookScores, remainingDays)
+        for(book in shippedBooks){
+            bookScores.remove(book)
+        }
+        solution.libraryScans += LibraryScan(bestLibrary, shippedBooks)
+        remainingDays -= bestLibrary.signupTime
+        iteration++
+        println("Remaining days: $remainingDays, Selected Library Score: ${score}")
+    }
+    return solution
 }
