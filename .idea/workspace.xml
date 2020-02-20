@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93a63646-bc33-4e63-b0e7-849f942b3708" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -118,12 +113,36 @@
       <option name="presentableId" value="Default" />
       <updated>1582187320567</updated>
     </task>
+    <task id="LOCAL-00001" summary="Hello world!">
+      <created>1582215510629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582215510629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Hello world!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello world!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="247" width="800" height="672" key="#Project_Structure" timestamp="1582215435213">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
     <state x="555" y="247" width="800" height="672" key="#Project_Structure/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582215435213" />
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2" timestamp="1582221316719">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582221316719" />
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582215511483">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582215511483" />
+    <state width="517" height="211" key="javadoc.popup.new" timestamp="1582219513717">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="517" height="211" key="javadoc.popup.new/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582219513717" />
   </component>
 </project>

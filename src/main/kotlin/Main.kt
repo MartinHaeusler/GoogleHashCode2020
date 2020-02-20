@@ -1,4 +1,11 @@
+import java.io.File
 
 fun main(args: Array<String>){
-    println("Hello World!")
+    val lines = File(args[0]).readLines()
+    for(line in lines){
+        val splits = line.split(",")
+
+    }
 }
+
+
