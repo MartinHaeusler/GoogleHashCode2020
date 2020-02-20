@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93a63646-bc33-4e63-b0e7-849f942b3708" name="Default Changelist" comment="">
+    <list default="true" id="93a63646-bc33-4e63-b0e7-849f942b3708" name="Default Changelist" comment="Added problem PDF and input files.">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -45,6 +50,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inputProblems" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -65,15 +78,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="HashCode a_example.txt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true">
       <module name="GoogleHashCode2020.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/a_example.txt" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="WORKING_DIRECTORY" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,7 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.HashCode a_example.txt" />
       </list>
     </recent_temporary>
   </component>
@@ -120,29 +133,77 @@
       <option name="project" value="LOCAL" />
       <updated>1582215510629</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added problem PDF and input files.">
+      <created>1582221332625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582221332625</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello world!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello world!" />
+    <MESSAGE value="Added problem PDF and input files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added problem PDF and input files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="247" width="800" height="672" key="#Project_Structure" timestamp="1582215435213">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
     <state x="555" y="247" width="800" height="672" key="#Project_Structure/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582215435213" />
-    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2" timestamp="1582221316719">
+    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582222379160">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582221316719" />
-    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582215511483">
+    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222379160" />
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2" timestamp="1582223012072">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582215511483" />
-    <state width="517" height="211" key="javadoc.popup.new" timestamp="1582219513717">
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223012072" />
+    <state width="1878" height="321" key="GridCell.Tab.0.bottom" timestamp="1582222558225">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="517" height="211" key="javadoc.popup.new/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582219513717" />
+    <state width="1878" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222558225" />
+    <state width="1878" height="321" key="GridCell.Tab.0.center" timestamp="1582222558225">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="321" key="GridCell.Tab.0.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222558225" />
+    <state width="1878" height="321" key="GridCell.Tab.0.left" timestamp="1582222558225">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="321" key="GridCell.Tab.0.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222558225" />
+    <state width="1878" height="321" key="GridCell.Tab.0.right" timestamp="1582222558225">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="321" key="GridCell.Tab.0.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222558225" />
+    <state width="1878" height="395" key="GridCell.Tab.1.bottom" timestamp="1582222510445">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="395" key="GridCell.Tab.1.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
+    <state width="1878" height="395" key="GridCell.Tab.1.center" timestamp="1582222510445">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="395" key="GridCell.Tab.1.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
+    <state width="1878" height="395" key="GridCell.Tab.1.left" timestamp="1582222510445">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="395" key="GridCell.Tab.1.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
+    <state width="1878" height="395" key="GridCell.Tab.1.right" timestamp="1582222510445">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="1878" height="395" key="GridCell.Tab.1.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582221333637">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582221333637" />
+    <state width="517" height="211" key="javadoc.popup.new" timestamp="1582222974509">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="517" height="211" key="javadoc.popup.new/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222974509" />
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1582221391086">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state x="623" y="261" width="672" height="678" key="search.everywhere.popup/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582221391086" />
   </component>
 </project>
