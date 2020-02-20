@@ -58,7 +58,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.HashCode d_tough_choices.txt">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -91,6 +91,71 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashCode b_read_on.txt" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GoogleHashCode2020.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/b_read_on.txt" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashCode c_incunabula.txt" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GoogleHashCode2020.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/c_incunabula.txt" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashCode d_tough_choices.txt" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GoogleHashCode2020.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/d_tough_choices.txt" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashCode e_so_many_books.txt" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GoogleHashCode2020.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/e_so_many_books.txt" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashCode f_libraries_of_the_world.txt" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="GoogleHashCode2020.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/inputProblems/f_libraries_of_the_world.txt" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -109,6 +174,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Kotlin.HashCode b_read_on.txt" />
+      <item itemvalue="Kotlin.HashCode c_incunabula.txt" />
+      <item itemvalue="Kotlin.HashCode d_tough_choices.txt" />
+      <item itemvalue="Kotlin.HashCode f_libraries_of_the_world.txt" />
+      <item itemvalue="Kotlin.HashCode e_so_many_books.txt" />
+      <item itemvalue="Kotlin.HashCode a_example.txt" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.HashCode a_example.txt" />
@@ -154,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582223471472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="generates valid solution">
+      <created>1582224232994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582224232994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,61 +242,66 @@
     <MESSAGE value="Added problem PDF and input files." />
     <MESSAGE value="Parsing and output complete" />
     <MESSAGE value="WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
+    <MESSAGE value="generates valid solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="generates valid solution" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="247" width="800" height="672" key="#Project_Structure" timestamp="1582215435213">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
     <state x="555" y="247" width="800" height="672" key="#Project_Structure/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582215435213" />
-    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582222379160">
+    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582224917543">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222379160" />
-    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2" timestamp="1582223471413">
+    <state x="418" y="243" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224917543" />
+    <state x="718" y="289" key="#xdebugger.evaluate" timestamp="1582224506351">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223471413" />
-    <state width="1878" height="321" key="GridCell.Tab.0.bottom" timestamp="1582223952377">
+    <state x="718" y="289" key="#xdebugger.evaluate/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224506351" />
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2" timestamp="1582224232919">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223952377" />
-    <state width="1878" height="321" key="GridCell.Tab.0.center" timestamp="1582223952377">
+    <state x="594" y="176" width="721" height="814" key="CommitChangelistDialog2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224232919" />
+    <state width="1878" height="321" key="GridCell.Tab.0.bottom" timestamp="1582224918697">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="321" key="GridCell.Tab.0.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223952377" />
-    <state width="1878" height="321" key="GridCell.Tab.0.left" timestamp="1582223952376">
+    <state width="1878" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224918697" />
+    <state width="1878" height="321" key="GridCell.Tab.0.center" timestamp="1582224918697">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="321" key="GridCell.Tab.0.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223952376" />
-    <state width="1878" height="321" key="GridCell.Tab.0.right" timestamp="1582223952377">
+    <state width="1878" height="321" key="GridCell.Tab.0.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224918697" />
+    <state width="1878" height="321" key="GridCell.Tab.0.left" timestamp="1582224918696">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="321" key="GridCell.Tab.0.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223952377" />
-    <state width="1878" height="395" key="GridCell.Tab.1.bottom" timestamp="1582222510445">
+    <state width="1878" height="321" key="GridCell.Tab.0.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224918696" />
+    <state width="1878" height="321" key="GridCell.Tab.0.right" timestamp="1582224918697">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.1.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
-    <state width="1878" height="395" key="GridCell.Tab.1.center" timestamp="1582222510445">
+    <state width="1878" height="321" key="GridCell.Tab.0.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224918697" />
+    <state width="1878" height="395" key="GridCell.Tab.1.bottom" timestamp="1582224523602">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.1.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
-    <state width="1878" height="395" key="GridCell.Tab.1.left" timestamp="1582222510445">
+    <state width="1878" height="395" key="GridCell.Tab.1.bottom/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224523602" />
+    <state width="1878" height="395" key="GridCell.Tab.1.center" timestamp="1582224523602">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.1.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
-    <state width="1878" height="395" key="GridCell.Tab.1.right" timestamp="1582222510445">
+    <state width="1878" height="395" key="GridCell.Tab.1.center/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224523602" />
+    <state width="1878" height="395" key="GridCell.Tab.1.left" timestamp="1582224523602">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="1878" height="395" key="GridCell.Tab.1.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582222510445" />
-    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582223472684">
+    <state width="1878" height="395" key="GridCell.Tab.1.left/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224523602" />
+    <state width="1878" height="395" key="GridCell.Tab.1.right" timestamp="1582224523602">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223472684" />
-    <state width="517" height="211" key="javadoc.popup.new" timestamp="1582223868038">
+    <state width="1878" height="395" key="GridCell.Tab.1.right/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224523602" />
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1582224234063">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>
-    <state width="517" height="211" key="javadoc.popup.new/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582223868038" />
+    <state x="555" y="321" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224234063" />
+    <state width="517" height="211" key="javadoc.popup.new" timestamp="1582224727309">
+      <screen x="0" y="0" width="1920" height="1173" />
+    </state>
+    <state width="517" height="211" key="javadoc.popup.new/0.0.1920.1173/1920.0.1920.1200@0.0.1920.1173" timestamp="1582224727309" />
     <state x="623" y="261" width="672" height="678" key="search.everywhere.popup" timestamp="1582221391086">
       <screen x="0" y="0" width="1920" height="1173" />
     </state>

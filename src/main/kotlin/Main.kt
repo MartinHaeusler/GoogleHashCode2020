@@ -1,4 +1,5 @@
 import java.io.File
+import java.nio.file.Files
 import kotlin.math.ceil
 
 typealias BookId = Int
@@ -62,16 +63,23 @@ fun main(args: Array<String>) {
     if(args.size != 1){
         throw IllegalArgumentException("Expected 1 argument (the book file)!")
     }
-    val problem = parseInputFile(File(args[0]))
+    val inputFile = File(args[0])
+    val problem = parseInputFile(inputFile)
     val solution = solve(problem)
-    printToFile(solution, File(args[0] + ".solution.txt"))
+    val score = score(problem, solution)
+    val outputDir = File(inputFile.parentFile, inputFile.nameWithoutExtension + "_output")
+    if(!outputDir.exists()){
+        Files.createDirectory(outputDir.toPath())
+    }
+
+    printToFile(solution, File(outputDir, "${score}.solution.txt"))
 }
 
 private fun parseInputFile(file: File): Problem {
     if (!file.exists() || !file.isFile) {
         throw IllegalArgumentException("File does not exist or is not a file: ${file.absolutePath}")
     }
-    val lines = file.readLines().toMutableList()
+    val lines = file.readLines().asSequence().filter { !it.isBlank() }.toMutableList()
     val headerLine = lines.removeAt(0)
     val headerLineSplit = headerLine.split(" ")
     val bookCount = headerLineSplit[0]
@@ -151,4 +159,9 @@ fun solve(problem: Problem): Solution {
     }
 
     return solution
+}
+
+fun score(problem: Problem, solution: Solution): Int {
+    val allScannedBooks = solution.libraryScans.asSequence().flatMap { it.booksToScan.asSequence() }.toSet()
+    return allScannedBooks.sumBy { problem.bookScores[it]!! }
 }
