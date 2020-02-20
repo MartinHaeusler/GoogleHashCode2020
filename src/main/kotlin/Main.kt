@@ -33,7 +33,7 @@ class Problem(
 }
 
 class Solution(
-    val libraryScans: List<LibraryScan>
+    val libraryScans: MutableList<LibraryScan> = mutableListOf()
 ) {
 
     fun toOutputFormat(): String {
@@ -118,10 +118,37 @@ fun printToFile(solution: Solution, file: File) {
     file.delete()
     file.createNewFile()
     file.writeText(solution.toOutputFormat())
+    println("Solution file written to: ${file.absolutePath}")
 }
 
 fun solve(problem: Problem): Solution {
     problem.libraries.sortByDescending { problem.totalScoreOf(it) }
 
+    val solution = Solution()
 
+    var daysConsumed = 0
+    var libraryIndex = 0
+    while(daysConsumed < problem.numberOfDays && libraryIndex + 1 < problem.libraries.size){
+        val library = problem.libraries[libraryIndex]
+        if(daysConsumed + library.totalScanTime > problem.numberOfDays){
+            // partial scan
+            if(daysConsumed + library.signupTime > problem.numberOfDays){
+                // can't use this one
+                libraryIndex++
+                continue
+            }
+            val daysRemaining = problem.numberOfDays - daysConsumed
+            // scan as many books as possible
+            val booksToScan = library.books.take(daysRemaining * library.booksShippedPerDay)
+            solution.libraryScans += LibraryScan(library, booksToScan)
+            daysConsumed += daysRemaining
+        }else{
+            // full scan
+            solution.libraryScans += LibraryScan(library, library.books.toList())
+            daysConsumed += library.totalScanTime
+        }
+        libraryIndex++
+    }
+
+    return solution
 }
